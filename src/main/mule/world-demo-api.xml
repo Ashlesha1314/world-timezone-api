@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:request-config>
 	<flow name="world-demo-apiFlow" doc:id="2e349c3d-3856-4398-a0f6-207ca73555da" >
 		<http:listener doc:name="Listener" doc:id="a740583f-e745-46a5-9318-d1dbce113b18" config-ref="HTTP_Listener_config" path="timezone/{region}/{city}"/>
-		<http:request method="GET" doc:name="Request" doc:id="090805bd-1ec5-4b09-991b-ba4a0875db4f" config-ref="HTTP_Request_configuration" path="/{region}/{city}">
+		<http:request method="GET" doc:name="timezone-request" doc:id="090805bd-1ec5-4b09-991b-ba4a0875db4f" config-ref="HTTP_Request_configuration" path="/{region}/{city}">
 			<http:uri-params ><![CDATA[#[output application/java
 ---
 {
