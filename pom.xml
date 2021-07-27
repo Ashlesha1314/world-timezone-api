@@ -32,7 +32,6 @@
 				<configuration>
 				<cloudHubDeployment>
                     <muleVersion>4.3.0</muleVersion>
-                    <!-- Deploy User Parameter -->
                     <username>Ashlesha1997</username>
                     <password>Ashu1997</password>
                     <!-- Environment Parameter -->
